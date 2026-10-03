@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "leanlearn",
+  "main": "./app/server.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "leanlearn-db",
+      "database_id": "045e18ba-274f-48ce-a583-4c2c5b17c422" // TODO: Set actual D1 database ID in Cloudflare dashboard
+    }
+  ],
+  "pages_build_output_dir": "./build/client",
+  "vars": {
+    "NODE_ENV": "production"
+  }
+}
